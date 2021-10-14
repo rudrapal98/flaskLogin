@@ -1,0 +1,71 @@
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  background: linear-gradient(to top, #16222a, #3a6073);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  color: #16222a;
+  text-align: center;
+}
+.login-form {
+  background: rgba(147, 156, 165, 0.5);
+  padding: 10px;
+  width: 400px;
+  border-radius: 10px;
+}
+.flex-input {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 5px;
+}
+label {
+  flex-basis: 130px;
+  margin-top: 12px;
+  font-size: 18px;
+}
+input[type="submit"] {
+  width: 100%;
+  font-size: 20px;
+  padding: 10px;
+  background-color: #16222a;
+  color: #ffffff;
+  border: none;
+  margin: 20px 0;
+}
+input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: #0f171d;
+}
+.flex-container {
+  display: flex;
+}
+.flex-container div {
+  flex: 1;
+}
+.flex-container a {
+  text-decoration: none;
+  color: #0f171d;
+}
+.flex-container a:hover {
+  text-decoration: underline;
+}
+@media all and (max-width: 480px) {
+  .flex-input {
+    flex-direction: column;
+  }
+  label {
+    flex-basis: 0;
+  }
+}
